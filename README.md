@@ -116,7 +116,7 @@ sprites from [OpenGameArt.org](https://opengameart.org/).
 
 Here is an example Scene for Reference:
 
-![example_scene.png]
+![example_scene.png](example_scene.png)
 
 All code that you would like to count toward your evaluation should be part of a
 `tag` on in your repository called `milestone-2`. This can be created by running
