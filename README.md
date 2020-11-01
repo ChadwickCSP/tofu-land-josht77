@@ -194,11 +194,6 @@ submitted. submitted.
 
 #### Computational Thinking
 
-In this assignment, you must demonstrate a basic understanding of C# and Unity
-as well as the ability to apply what you've learned during the Driving Simulator
-videos to the Flying Simulator Challenge. To receive Advanced marks, student
-must go above and beyond the Challenge by adding in their own personal
-customizations.
 | Advanced                                                                         | Proficient                                                                  | Basic                                                                                                                      | Below Basic                                            |
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------|
 | Student creates 5 different enemy types                                          | Student creates the 3 basic enemies for Milestone 3                         | Student completes all of the Tutorial Video features                                                                       | Student does not complete all features in video series |
