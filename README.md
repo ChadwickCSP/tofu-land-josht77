@@ -24,7 +24,7 @@ driving simulator to fix and implement a Flying Simulator.
 
 ### Sign up for Project
 
-Sign up for the project repository here: [NONE]()
+Sign up for the project repository here: [https://classroom.github.com/a/o5dLXIFE](https://classroom.github.com/a/o5dLXIFE)
 
 After your repository has initialized it, clone it to your computer. I recommend
 putting it in your `ap-csp` directory.
