@@ -199,13 +199,12 @@ as well as the ability to apply what you've learned during the Driving Simulator
 videos to the Flying Simulator Challenge. To receive Advanced marks, student
 must go above and beyond the Challenge by adding in their own personal
 customizations.
-
 | Advanced                                                                         | Proficient                                                                  | Basic                                                                                                                      | Below Basic                                            |
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------|
 | Student creates 5 different enemy types                                          | Student creates the 3 basic enemies for Milestone 3                         | Student completes all of the Tutorial Video features                                                                       | Student does not complete all features in video series |
 | Student creates a health variable to give the Tofu Character multiple hit points | Student utilizes most of the provided tile sprites to create a unique scene | The Tofu can Jump, Walk left and right, and is animated based on the direction of facing                                   |                                                        |
 | Student proposes and implements a unique feature                                 | Student adds Spikes that cause the Tofu to respawn on touching              | Enemy animates the direction of facing and patrols on a platform, knocks back the Tofu, and is destroyed when jumped upon. |                                                        |
-
+|                                                                                  | Student completes all non-bonus features listed in this README.md           |                                                                                                                            |                                                        |
 ### Computing, Programming and Practice
 
 Demonstrate how you tested your assignment, write comments, and provide well
