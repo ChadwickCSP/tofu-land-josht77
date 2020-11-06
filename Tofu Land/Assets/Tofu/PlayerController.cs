@@ -6,6 +6,8 @@ public class PlayerController : MonoBehaviour
 {
     // Determines the speed that the Tofu moves
     public float speed;
+    // Determines how high the Tofu jumps
+    public float jumpPower;
 
 // Update is called once per frame
     void Update()
@@ -13,6 +15,14 @@ public class PlayerController : MonoBehaviour
         float horizontalInput = Input.GetAxis("Horizontal");
 
         transform.Translate(Vector2.right * speed * Time.deltaTime * horizontalInput);
+
+        // The space bar will now allow tofu to jump
+        bool isJumping = Input.GetKeyDown(KeyCode.Space);
+        // Tofu jump power 
+        if (isJumping)
+        {
+        GetComponent<Rigidbody2D>().AddForce(Vector2.up * jumpPower);
+        }
 
         if (horizontalInput < 0) 
         {
@@ -30,5 +40,14 @@ public class PlayerController : MonoBehaviour
             GetComponent<Animator>().SetBool("isMoving", false);
         }
 
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        print(collision.gameObject);
+        EnemyController enemy = collision.gameObject.GetComponent<EnemyController>();
+        if (enemy !=null)
+        {
+            this.gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.left * enemy.strength);
+        }
     }
 }
