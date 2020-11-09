@@ -47,7 +47,17 @@ public class PlayerController : MonoBehaviour
         EnemyController enemy = collision.gameObject.GetComponent<EnemyController>();
         if (enemy !=null)
         {
-            this.gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.left * enemy.strength);
+
+            float tofuX = this.transform.position.x;
+            float enemyX = enemy.transform.position.x;
+            bool isLeftOfEnemy = tofuX < enemyX;
+            if(isLeftOfEnemy)
+            {
+                this.gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.left * enemy.strength);
+            } else 
+            {
+                this.gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.right * enemy.strength);
+            }
         }
     }
 }
