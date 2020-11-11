@@ -42,7 +42,7 @@ public class EnemyController : MonoBehaviour
         if (playerController != null)
         {
             UnityEngine.Object.Destroy(this.gameObject);
-            playerController.gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.up * 600);
+            playerController.gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.up * 400);
         }
 
     }
