@@ -47,4 +47,14 @@ public class EnemyController : MonoBehaviour
 
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        print(collision.gameObject);
+        Ground ground = collision.gameObject.GetComponent<Ground>();
+        if (ground != null)
+        {
+            this.gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.up * ground.strength);
+        }
+
+     }
 }
