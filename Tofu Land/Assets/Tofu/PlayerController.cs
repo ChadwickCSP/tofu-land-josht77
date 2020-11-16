@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
 // Update is called once per frame
     void Update()
     {
+        // the horizontal input will equal the horizontal axis and allows for the tofu to move on the horizontal axis
         float horizontalInput = Input.GetAxis("Horizontal");
 
         transform.Translate(Vector2.right * speed * Time.deltaTime * horizontalInput);
@@ -24,6 +25,7 @@ public class PlayerController : MonoBehaviour
         GetComponent<Rigidbody2D>().AddForce(Vector2.up * jumpPower);
         }
 
+        // if the horizontal input is less than 0 then the axis flips
         if (horizontalInput < 0) 
         {
             GetComponent<SpriteRenderer>().flipX = true;
@@ -32,6 +34,7 @@ public class PlayerController : MonoBehaviour
             GetComponent<SpriteRenderer>().flipX = false;
         }
 
+        // if the horizontal input is not equal to 0 then the tofu will move 
         if (horizontalInput != 0)
         {
             GetComponent<Animator>().SetBool("isMoving", true);
@@ -43,7 +46,9 @@ public class PlayerController : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        // prints the collisions
         print(collision.gameObject);
+        // if the enemy colldies with the tofu then the enemy will knock the tofu back depending on the enemy's strength
         EnemyController enemy = collision.gameObject.GetComponent<EnemyController>();
         if (enemy !=null)
         {

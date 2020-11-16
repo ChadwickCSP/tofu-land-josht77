@@ -9784,11 +9784,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 683032589}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c591880e591fe9e49b87e2b0fcf26dc6, type: 3}
+  m_Script: {fileID: 11500000, guid: b529bbf7740a8d34a9c108f71b2cb204, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   movingLeft: 1
   strength: 200
+  tofu: {fileID: 475803624}
 --- !u!61 &683032591
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15320,8 +15321,9 @@ EdgeCollider2D:
   m_Points:
   - {x: -0.5063391, y: 0.41828513}
   - {x: 0.463439, y: 0.424623}
-  - {x: 0.47353506, y: -0.3018322}
-  - {x: 0.4684863, y: -0.43692923}
+  - {x: 0.3964734, y: -0.3326497}
+  - {x: 0.36059952, y: -0.43692923}
+  - {x: 0.36059952, y: -0.43692923}
   - {x: -0.44190454, y: -0.43561172}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
@@ -24246,9 +24248,10 @@ EdgeCollider2D:
   m_Points:
   - {x: -0.5281081, y: 0.39343905}
   - {x: -0.5281081, y: 0.39343905}
-  - {x: 0.47231054, y: 0.41057408}
-  - {x: 0.4809785, y: 0.4020065}
-  - {x: 0.4938326, y: -0.46330822}
+  - {x: 0.4248619, y: 0.41057408}
+  - {x: 0.43352938, y: 0.39014697}
+  - {x: 0.40987444, y: -0.41301107}
+  - {x: 0.44638395, y: -0.46330822}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -26679,7 +26682,7 @@ EdgeCollider2D:
   m_Points:
   - {x: -0.46789932, y: -0.45061588}
   - {x: -0.47167683, y: -0.44366312}
-  - {x: -0.4787526, y: 0.44051123}
+  - {x: -0.43251657, y: 0.45592022}
   - {x: 0.50785875, y: 0.4360609}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
