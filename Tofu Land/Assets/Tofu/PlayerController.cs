@@ -8,7 +8,13 @@ public class PlayerController : MonoBehaviour
     public float speed;
     // Determines how high the Tofu jumps
     public float jumpPower;
+    // heath of the tofu
+    public float health;
 
+    void Start()
+{
+    health = 5;
+}
 // Update is called once per frame
     void Update()
     {
@@ -63,6 +69,12 @@ public class PlayerController : MonoBehaviour
             {
                 this.gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.right * enemy.strength);
             }
+        SpikeController spike = collision.gameObject.GetComponent<SpikeController>();
+        if (spike != null)
+        {
+            health += -1;
+        }
+        
         }
     }
 }
