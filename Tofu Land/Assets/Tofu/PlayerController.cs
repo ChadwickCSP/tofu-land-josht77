@@ -11,10 +11,9 @@ public class PlayerController : MonoBehaviour
     // heath of the tofu
     public float health;
 
-    void Start()
-{
-    health = 5;
-}
+    [SerializeField]Transform spawnPoint;
+
+
 // Update is called once per frame
     void Update()
     {
@@ -49,6 +48,12 @@ public class PlayerController : MonoBehaviour
             GetComponent<Animator>().SetBool("isMoving", false);
         }
 
+        if (health < 1)
+        {
+            transform.position = spawnPoint.position;
+            health = 3;
+        }
+
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -69,6 +74,7 @@ public class PlayerController : MonoBehaviour
             {
                 this.gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.right * enemy.strength);
             }
+
         SpikeController spike = collision.gameObject.GetComponent<SpikeController>();
         if (spike != null)
         {

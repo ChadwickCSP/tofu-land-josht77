@@ -6743,6 +6743,7 @@ GameObject:
   - component: {fileID: 420705594}
   - component: {fileID: 420705596}
   - component: {fileID: 420705597}
+  - component: {fileID: 420705598}
   m_Layer: 0
   m_Name: AllTiles_43
   m_TagString: Untagged
@@ -6854,6 +6855,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1489250981}
+--- !u!114 &420705598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 420705593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0ef22ab1bc692e4fa09d7c304513e18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &436648634
 GameObject:
   m_ObjectHideFlags: 0
@@ -7224,7 +7237,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   jumpPower: 300
-  health: 5
+  health: 0
+  spawnPoint: {fileID: 1489250981}
 --- !u!95 &475803625
 Animator:
   serializedVersion: 3
@@ -7571,6 +7585,7 @@ GameObject:
   - component: {fileID: 507346677}
   - component: {fileID: 507346676}
   - component: {fileID: 507346675}
+  - component: {fileID: 507346678}
   m_Layer: 0
   m_Name: AllTiles_32 (3)
   m_TagString: Untagged
@@ -7682,6 +7697,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &507346678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 507346673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0ef22ab1bc692e4fa09d7c304513e18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &507741825
 GameObject:
   m_ObjectHideFlags: 0
@@ -8374,6 +8401,7 @@ GameObject:
   - component: {fileID: 562572162}
   - component: {fileID: 562572161}
   - component: {fileID: 562572160}
+  - component: {fileID: 562572163}
   m_Layer: 0
   m_Name: AllTiles_32 (2)
   m_TagString: Untagged
@@ -8485,6 +8513,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &562572163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 562572158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0ef22ab1bc692e4fa09d7c304513e18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &563371570
 GameObject:
   m_ObjectHideFlags: 0
@@ -9120,6 +9160,7 @@ GameObject:
   - component: {fileID: 601489135}
   - component: {fileID: 601489134}
   - component: {fileID: 601489133}
+  - component: {fileID: 601489136}
   m_Layer: 0
   m_Name: AllTiles_43 (4)
   m_TagString: Untagged
@@ -9231,6 +9272,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &601489136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 601489131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0ef22ab1bc692e4fa09d7c304513e18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &606687530
 GameObject:
   m_ObjectHideFlags: 0
@@ -9489,6 +9542,7 @@ GameObject:
   - component: {fileID: 620838110}
   - component: {fileID: 620838109}
   - component: {fileID: 620838108}
+  - component: {fileID: 620838111}
   m_Layer: 0
   m_Name: AllTiles_32 (5)
   m_TagString: Spike
@@ -9600,6 +9654,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &620838111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 620838106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0ef22ab1bc692e4fa09d7c304513e18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &630258857
 GameObject:
   m_ObjectHideFlags: 0
@@ -11599,6 +11665,7 @@ GameObject:
   - component: {fileID: 760511968}
   - component: {fileID: 760511967}
   - component: {fileID: 760511966}
+  - component: {fileID: 760511969}
   m_Layer: 0
   m_Name: AllTiles_32 (1)
   m_TagString: Untagged
@@ -11710,6 +11777,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &760511969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 760511964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0ef22ab1bc692e4fa09d7c304513e18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &766983301
 GameObject:
   m_ObjectHideFlags: 0
@@ -16798,6 +16877,7 @@ GameObject:
   - component: {fileID: 1069455314}
   - component: {fileID: 1069455313}
   - component: {fileID: 1069455312}
+  - component: {fileID: 1069455315}
   m_Layer: 0
   m_Name: AllTiles_43 (3)
   m_TagString: Untagged
@@ -16909,6 +16989,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1069455315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1069455310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0ef22ab1bc692e4fa09d7c304513e18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1070740441
 GameObject:
   m_ObjectHideFlags: 0
@@ -24593,6 +24685,7 @@ GameObject:
   - component: {fileID: 1720456246}
   - component: {fileID: 1720456245}
   - component: {fileID: 1720456244}
+  - component: {fileID: 1720456247}
   m_Layer: 0
   m_Name: AllTiles_32 (4)
   m_TagString: Untagged
@@ -24704,6 +24797,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1720456247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1720456242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0ef22ab1bc692e4fa09d7c304513e18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1720635342
 GameObject:
   m_ObjectHideFlags: 0
@@ -27898,6 +28003,7 @@ GameObject:
   - component: {fileID: 1910514392}
   - component: {fileID: 1910514395}
   - component: {fileID: 1910514394}
+  - component: {fileID: 1910514396}
   - component: {fileID: 1910514393}
   m_Layer: 0
   m_Name: AllTiles_43 (5)
@@ -28010,6 +28116,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1910514396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910514391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0ef22ab1bc692e4fa09d7c304513e18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1915062153
 GameObject:
   m_ObjectHideFlags: 0
@@ -28900,8 +29018,8 @@ GameObject:
   - component: {fileID: 1975725253}
   - component: {fileID: 1975725252}
   - component: {fileID: 1975725254}
-  - component: {fileID: 1975725255}
   - component: {fileID: 1975725256}
+  - component: {fileID: 1975725255}
   m_Layer: 0
   m_Name: AllTiles_32
   m_TagString: Untagged
