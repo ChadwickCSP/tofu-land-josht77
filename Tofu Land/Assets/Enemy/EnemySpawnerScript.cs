@@ -25,7 +25,8 @@ public class EnemySpawnerScript : MonoBehaviour
             nextSpawn = Time.time + spawnRate;
             randX = Random.Range (-8f, 8f);
             whereToSpawn = new Vector3 (randX, transform.position.y, -5);
-            GameObject newEnemy = Instantiate (enemy, whereToSpawn, Quaternion.identity);
+            GameObject newEnemy = Instantiate (enemy);//, whereToSpawn, Quaternion.identity);
+            //Instantiate()
             newEnemy.transform.position = whereToSpawn;
         }
     }
