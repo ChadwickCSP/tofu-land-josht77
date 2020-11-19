@@ -47,7 +47,7 @@ public class PlayerController : MonoBehaviour
         {
             GetComponent<Animator>().SetBool("isMoving", false);
         }
-
+        // if the health is less than 1, then the position of the tofu should transform to the object spawnPoint
         if (health < 1)
         {
             transform.position = spawnPoint.position;
@@ -74,9 +74,8 @@ public class PlayerController : MonoBehaviour
             {
                 this.gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.right * enemy.strength);
             }
-
-        SpikeController spike = collision.gameObject.GetComponent<SpikeController>();
-        if (spike != null)
+        // the enemy will now damage the tofu. Three hits and the tofu will die and respawn. Does not apply to the follower enemy
+        if (enemy != null)
         {
             health += -1;
         }
