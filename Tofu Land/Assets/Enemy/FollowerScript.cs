@@ -15,6 +15,7 @@ public class FollowerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // if the enemy is left of tofu, then the speed will be -1 meaning they walk to the left. if false, then it will walk to the right
         float speed = 0;
         float tofuX = tofu.transform.position.x;
         float enemyX = this.transform.position.x;

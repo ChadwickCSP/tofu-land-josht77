@@ -20,6 +20,7 @@ public class EnemySpawnerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // An enemy will spawn every 10 seconds within the range of -8, 8. However, there is an error in the code, so the enemys are spawning behind the tiles
         if (Time.time > nextSpawn)
         {
             nextSpawn = Time.time + spawnRate;

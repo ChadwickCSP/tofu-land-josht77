@@ -15,4 +15,6 @@ I have an additional feature where enemy's will spawn randomly around the map, h
 enemys that have spawned
 
 ## Video Solution
-Video of the game (put link)
+Video of the game (https://drive.google.com/file/d/1-VqERwPzdECl3DAoIeejCd-0ofKARnl-/view)
+
+When watching the video, you will see that the top left enemy and the jumping enemy get stuck in place. This is because there are other enemys in their way that spawned at random that you are unable to see since they are behind the tiles. However, my tofu still killed both enemys. Also, my tofu may have respawned randomly, that is because the enemys do damage to my tofu so they killed my tofu and made it respawn. The spikes also made my tofu respawn when the tofu made contact.
